@@ -19230,18 +19230,20 @@ select.form-control-sm:not([size]):not([multiple]) {
 }
 
 .password-eye:before {
-    font-family: "Material Design Icons";
-    content: "\f06d0";
+    /* font-family: "Material Design Icons";
+    content: "\f070"; */
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
     vertical-align: middle;
     line-height: 1.2;
-    font-size: 16px
+    font-size: 16px;
+    font: var(--fa-font-solid);
+    content: "\f06e";
 }
 
 .show-password .password-eye:before {
-    content: "\f06d1"
+    content: "\f070"
 }
 
 .modal-title {
