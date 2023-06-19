@@ -16497,6 +16497,8 @@ html[data-sidenav-user=true] .leftbar-user {
     display: inline-block;
     text-rendering: auto;
     position: absolute;
+    content: "\f078";
+    font: var(--fa-font-solid);
     top: 50%;
     right: calc(var(--ct-menu-item-padding-x) * 1.5);
     -webkit-transition: -webkit-transform .15s;
@@ -16510,8 +16512,7 @@ html[data-sidenav-user=true] .leftbar-user {
 }
 
 .side-nav .menu-arrow:before {
-    content: "\f0142";
-    font-family: "Material Design Icons"
+    content: "\f078"; 
 }
 
 .side-nav .badge {
