@@ -1153,7 +1153,7 @@
                       <li class="breadcrumb-item active">Data Tables</li>
                     </ol>
                   </div>
-                  <h4 class="page-title">Data Tables</h4>
+                  <h4 class="page-title">Detail DGM</h4>
                 </div>
               </div>
             </div>
@@ -1167,9 +1167,60 @@
                   row will toggle its selected state without effecting other
                   rows, unlike the os and single options shown in other
                   examples.
+                   <!-- Signup modal content -->
+                   <div id="signup-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                           
+
+                            <div class="modal-body">
+                                <div class="auth-brand text-center mt-2 mb-4 position-relative top-0">
+                                    <a href="index.html" class="logo-dark">
+                                        <span><img src="assets/images/logo-dark.png" alt="dark logo" height="22"></span>
+                                    </a>
+                                    <a href="index.html" class="logo-light">
+                                        <span><img src="assets/images/logo.png" alt="logo" height="22"></span>
+                                    </a>
+                                </div>
+
+                                <form class="ps-3 pe-3" action="#">
+
+                                    <div class="mb-3">
+                                        <label for="username" class="form-label">Name</label>
+                                        <input class="form-control" type="email" id="username" required="" placeholder="Michael Zenaty">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="emailaddress" class="form-label">Email address</label>
+                                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="john@deo.com">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="customCheck1">
+                                            <label class="form-check-label" for="customCheck1">I accept <a href="#">Terms and Conditions</a></label>
+                                        </div> 
+                                    </div>
+
+                                    <div class="mb-3 text-center">
+                                        <button class="btn btn-primary" type="submit">Sign Up Free</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
                 </p>
 
-                <ul class="nav nav-tabs nav-bordered mb-3">
+                <!-- <ul class="nav nav-tabs nav-bordered mb-3">
                   <li class="nav-item">
                     <a
                       href="#multi-item-preview"
@@ -1190,7 +1241,7 @@
                       Code
                     </a>
                   </li>
-                </ul>
+                </ul> -->
                 <!-- end nav-->
                 <div class="tab-content">
                   <div class="tab-pane show active" id="multi-item-preview">
@@ -1206,6 +1257,7 @@
                           <th>Age</th>
                           <th>Start date</th>
                           <th>Salary</th>
+                          <th class="text-center">Action</th>
                         </tr>
                       </thead>
 
@@ -1217,6 +1269,11 @@
                           <td>61</td>
                           <td>2011/04/25</td>
                           <td>$320,800</td>
+                          <td class="text-center">
+                            <a href=""><i class="font-20"><iconify-icon icon="mdi:eye"></iconify-icon></i></a>&nbsp;
+                            <a href=""><i class="font-20 text-success"><iconify-icon icon="mdi:pencil"></iconify-icon></i></a>
+                            <a href=""><i class="font-20 text-danger"><iconify-icon icon="mdi:delete"></iconify-icon></i></a> 
+                          </td>
                         </tr>
                         <tr>
                           <td>Garrett Winters</td>
@@ -1671,82 +1728,6 @@
                   </div>
                   <!-- end preview-->
 
-                  <div class="tab-pane code" id="multi-item-code">
-                    <p>
-                      Please include following css file at
-                      <code>head</code> element
-                    </p>
-
-                    <pre>
-                                                <span class="html escape">
-                                                    &lt;!-- Datatables css --&gt;
-                                                    &lt;link href=&quot;assets/vendor/datatables.net-select-bs5/css/select.bootstrap5.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
-                                                </span>
-                                            </pre>
-                    <!-- end highlight-->
-
-                    <p>
-                      Make sure to include following js files at end of
-                      <code>body</code> element
-                    </p>
-
-                    <button
-                      class="btn-copy-clipboard"
-                      data-clipboard-action="copy"
-                    >
-                      Copy
-                    </button>
-                    <pre class="mb-0">
-                                                <span class="html escape">
-                                                    &lt;!-- Datatables js --&gt;
-                                                    &lt;script src=&quot;assets/vendor/datatables.net-select/js/dataTables.select.min.js&quot;&gt;&lt;/script&gt;
-                                                </span>
-                                            </pre>
-                    <!-- end highlight-->
-                    <button
-                      class="btn-copy-clipboard"
-                      data-clipboard-action="copy"
-                    >
-                      Copy
-                    </button>
-                    <pre class="mb-0">
-                                                <span class="html escape">
-                                                    &lt;table id=&quot;selection-datatable&quot; class=&quot;table dt-responsive nowrap w-100&quot;&gt;
-                                                        &lt;thead&gt;
-                                                            &lt;tr&gt;
-                                                                &lt;th&gt;Name&lt;/th&gt;
-                                                                &lt;th&gt;Position&lt;/th&gt;
-                                                                &lt;th&gt;Office&lt;/th&gt;
-                                                                &lt;th&gt;Age&lt;/th&gt;
-                                                                &lt;th&gt;Start date&lt;/th&gt;
-                                                                &lt;th&gt;Salary&lt;/th&gt;
-                                                            &lt;/tr&gt;
-                                                        &lt;/thead&gt;
-                                                    
-                                                    
-                                                        &lt;tbody&gt;
-                                                            &lt;tr&gt;
-                                                                &lt;td&gt;Tiger Nixon&lt;/td&gt;
-                                                                &lt;td&gt;System Architect&lt;/td&gt;
-                                                                &lt;td&gt;Edinburgh&lt;/td&gt;
-                                                                &lt;td&gt;61&lt;/td&gt;
-                                                                &lt;td&gt;2011/04/25&lt;/td&gt;
-                                                                &lt;td&gt;$320,800&lt;/td&gt;
-                                                            &lt;/tr&gt;
-                                                            &lt;tr&gt;
-                                                                &lt;td&gt;Garrett Winters&lt;/td&gt;
-                                                                &lt;td&gt;Accountant&lt;/td&gt;
-                                                                &lt;td&gt;Tokyo&lt;/td&gt;
-                                                                &lt;td&gt;63&lt;/td&gt;
-                                                                &lt;td&gt;2011/07/25&lt;/td&gt;
-                                                                &lt;td&gt;$170,750&lt;/td&gt;
-                                                            &lt;/tr&gt;
-                                                        &lt;/tbody&gt;
-                                                    &lt;/table&gt;
-                                                </span>
-                                            </pre>
-                    <!-- end highlight-->
-                  </div>
                   <!-- end preview code-->
                 </div>
                 <!-- end tab-content-->
